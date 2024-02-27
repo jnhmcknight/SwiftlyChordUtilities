@@ -49,6 +49,8 @@ extension Chord.Quality {
             ["mmaj7b5", "mMaj7b5"]
         case .minorSevenFlatFive:
             ["m7b5"]
+        case .two:
+            ["2"]
         case .susTwo:
             ["sus2"]
         case .susFour:

@@ -39,6 +39,7 @@ extension Chord {
 
         // MARK: Suspended
 
+        case two = "2"
         case susTwo = "sus2"
         case susFour = "sus4"
         case sevenSusTwo = "7sus2"
@@ -112,6 +113,8 @@ extension Chord {
                 ("diminished", "dim", "dim", "dim")
             case .dimSeven:
                 ("dim seven", "dim7", "dim⁷", "°")
+            case .two:
+                ("two", "2", "²", "²")
             case .susTwo:
                 ("suss two", "sus2", "sus²", "sus²")
             case .susFour:
@@ -211,7 +214,7 @@ extension Chord {
                 .minor
             case .dim, .dimSeven:
                 .diminished
-            case .susTwo, .susFour, .sevenSusTwo, .sevenSusFour:
+            case .two, .susTwo, .susFour, .sevenSusTwo, .sevenSusFour:
                 .suspended
             case .aug, .augSeven, .augNine:
                 .augmented

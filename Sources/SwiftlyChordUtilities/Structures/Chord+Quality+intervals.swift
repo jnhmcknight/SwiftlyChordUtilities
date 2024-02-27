@@ -93,6 +93,9 @@ public extension Chord.Quality {
 
             // MARK: - Suspended
 
+        case .two:
+            /// C    D    G
+            ([.P1, .M2, .d6], [])
         case .susTwo:
             /// C    D    G
             ([.P1, .M2, .d6], [])
